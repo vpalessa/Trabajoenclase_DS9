@@ -14,7 +14,7 @@ const ContactList = ({ contacts, fetchContacts, setCurrentContact }) => {
         <ul>
             {contacts.map(contact => (
                 <li key={contact._id}>
-                    {contact.name} - {contact.phone}
+                    {contact.name} - {contact.phone} - {contact.age} - {contact.lastname}
                     <button onClick={() =>
                         setCurrentContact(contact)}>Edit</button>
                     <button onClick={() =>

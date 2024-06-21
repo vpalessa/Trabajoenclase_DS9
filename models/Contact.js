@@ -5,10 +5,19 @@ const contactSchema = new mongoose.Schema({
         type: String,
         required: true
     },
+    lastname: {
+        type: String,
+        required: true
+    },
     phone: {
         type: String,
         required: true
+    },
+    age: {
+        type: String,
+        required: true
     }
+
 });
 // Creación del modelo de contacto
 const Contact = mongoose.model('Contact', contactSchema);
